@@ -3,8 +3,8 @@ body{
     text-align: center;
 }
 div{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     border: 2px solid black;
 }
@@ -18,9 +18,14 @@ div{
     background-color: rgba(0, 0, 0, 0.75);
     display: flex;   
     flex-direction: row;
-    justify-content: space-evenly; /*justify-content sets alignment along the main axis without affecting the flex-direction*/
-                            /*justify-content can be set to flex-start, flex-end, center, space-evenly*/
-    flex-wrap: wrap; /*The flex-wrap property in CSS controls whether flex items should wrap to the next line when they exceed the container's width.*/
-    align-content:start; /*alignment of space between and around the content along cross-axis*/
+    justify-content: space-around; /*alignment along the main axis without affecting the flex-direction
+                            /*--it can be set to flex-start, flex-end. center, space-evenly space-around
+                             and space-between. */
+    flex-wrap: wrap;      /*The flex-wrap property controls whether flex items should wrap to the next line 
+                            when they exceed the container's width.*/
+    align-content:flex-end; /*alignment of the content along cross-axis*/
 }
 
+#box1{
+   /* align-self:end;  /*alignment of individual along cross axis*/
+}
