@@ -1,0 +1,26 @@
+/*flex box in css*/
+body{
+    text-align: center;
+}
+div{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+/*after setting display to flex, now we can use the properties of flexbox*/
+/*1) 1st is flexbox direction that can be set to row,column,row-reverse and column-reverse*/
+/*2) 2nd one is flex properties for FLEX CONTAINER()*/
+#container{
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-evenly; /*justify-content sets alignment along the main axis without affecting the flex-direction*/
+                            /*justify-content can be set to flex-start, flex-end, center, space-evenly*/
+    flex-wrap: wrap; /*The flex-wrap property in CSS controls whether flex items should wrap to the next line when they exceed the container's width.*/
+    align-content:start; /*alignment of space between and around the content along cross-axis*/
+}
+
